@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+
+.larghezza {
+      width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+/* barra opzioni */
+header {
+    background-color: aqua;
+}
+
+.barra {
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.barra div {
+    border: 1px solid #ddd;
+    background: #3a1fbf;
+    height: 45px;
+}
+
+.barra div:not(.discord) {
+    flex-basis: 7%;
+}
+
+.barra div.discord {
+    flex-basis: 15%;
+}
+
+/* titolo */
+.contenitore-titolo {
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 100px 0;
+    
+}
+
+.titolo {
+    background-color: #3a1fbf;
+    width: 700px;
+    height: 350px;
+}
+
+/* contenitori testo */
+section {
+    height: 500px;
+    background-color: rgb(212, 212, 212);
+}
