@@ -50,8 +50,70 @@ header {
     height: 350px;
 }
 
-/* contenitori testo */
-section {
+/* contenitori + immagini*/
+section:not(.contenitore-immagini-4) {
     height: 500px;
-    background-color: rgb(212, 212, 212);
 }
+
+section div {
+    border: 1px solid white;
+    width: 600px;
+    height:400px ;
+}
+
+.color div{
+    background-color:  #3a1fbf;    
+}
+
+/* prima immagine */
+.contenitore-immagini-1 {
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* seconda immagine */
+.contenitore-immagini-2 {
+    background-color: rgb(216, 214, 214);
+    align-items: center;
+    justify-content: center;
+}
+
+.contenitore-basis {
+    width: 1201px;
+}
+
+.basis {
+    flex-basis: 70%;
+}
+
+/* terza immagine */
+.contenitore-immagini-3 {
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+/* quarta immagine */
+.contenitore-immagini-4 {
+    background-color: rgb(216, 214, 214);
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+section div.colonna {
+    width: 1200px;
+   
+}
+
+.contenitore-colonna {
+    flex-direction: column;
+    width: 1200px;
+}
+
+.larghezza-1 {
+    height: 800px;
+}
+
