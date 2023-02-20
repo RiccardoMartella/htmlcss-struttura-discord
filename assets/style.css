@@ -134,6 +134,7 @@ footer > div{
     display: flex;
     margin: auto;
     width: 1300px;
+    justify-content: space-between;
 }
 
 hr {
@@ -142,9 +143,9 @@ hr {
 }
 
 .finale {
-    justify-content: space-between;
     background-color: blue;
     height: 50px;
-    width: 50px;
+    width: 150px;
+    margin-top: 20px;
 }
 
