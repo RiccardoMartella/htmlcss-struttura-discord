@@ -4,10 +4,6 @@
     margin: 0;
 } 
 
-.larghezza {
-      width: 100%;
-}
-
 .flex {
     display: flex;
 }
@@ -28,7 +24,7 @@ header {
     height: 45px;
 }
 
-.barra div:not(.discord) {
+.barra div {
     flex-basis: 7%;
 }
 
@@ -50,7 +46,7 @@ header {
     height: 350px;
 }
 
-/* contenitori + immagini*/
+/* contenitori*/
 section:not(.contenitore-immagini-4) {
     height: 500px;
 }
@@ -58,27 +54,25 @@ section:not(.contenitore-immagini-4) {
 section div {
     border: 1px solid white;
     width: 600px;
-    height:400px ;
+    height:400px;
+}
+
+section div.colonna:nth-child(2) {
+    height: 800px;
 }
 
 .color div{
     background-color:  #3a1fbf;    
 }
 
-/* prima immagine */
-.contenitore-immagini-1 {
-    background-color: rgb(255, 255, 255);
+/* contenitore immagine */
+.contenitore-immagini {
     align-items: center;
     justify-content: center;
 }
 
-
-/* seconda immagine */
-.contenitore-immagini-2 {
-    background-color: rgb(216, 214, 214);
-    align-items: center;
-    justify-content: center;
-}
+.contenitore-immagini:nth-child(even) {background-color: white;}
+.contenitore-immagini:nth-child(odd) {background-color: lightgrey;}
 
 .contenitore-basis {
     width: 1201px;
@@ -88,20 +82,6 @@ section div {
     flex-basis: 70%;
 }
 
-/* terza immagine */
-.contenitore-immagini-3 {
-    background-color: rgb(255, 255, 255);
-    align-items: center;
-    justify-content: center;
-}
-
-/* quarta immagine */
-.contenitore-immagini-4 {
-    background-color: rgb(216, 214, 214);
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
-}
 
 section div.colonna {
     width: 1200px;
@@ -110,10 +90,61 @@ section div.colonna {
 
 .contenitore-colonna {
     flex-direction: column;
-    width: 1200px;
+    width: 1201px;
+    height: 700px;
 }
 
-.larghezza-1 {
+.contenitore-immagini-4 {
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+}
+
+/* parte finale */
+footer {
+    background-color: rgb(29, 29, 29);
     height: 800px;
+    justify-content: center;
+}
+
+.contenitore-informazioni {
+    height: 100px;
+    padding-top: 30px;
+    width: 1300px;
+}
+
+
+.contenitore-informazioni div{
+    background-color: #3a1fbf;
+    border: 1px solid #ddd;
+    flex-basis: 20%;
+}
+
+.contenitore-informazioni div.informazioni {
+    flex-basis: 40%;
+}
+
+/* parte finale */
+footer > div{
+    height: 400px;
+    justify-content: center;
+}
+
+.contenitore-finale {
+    display: flex;
+    margin: auto;
+    width: 1300px;
+}
+
+hr {
+    width: 1300px;
+    margin: auto;
+}
+
+.finale {
+    justify-content: space-between;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
 }
 
